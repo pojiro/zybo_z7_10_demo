@@ -13,9 +13,8 @@ defmodule ZyboZ710Demo.Application do
 
     children =
       [
-        # Children for all targets
-        # Starts a worker by calling: ZyboZ710Demo.Worker.start_link(arg)
-        # {ZyboZ710Demo.Worker, arg},
+        {ZyboZ710Demo.GpioServer, []},
+        {ZyboZ710Demo.UioServer, []}
       ] ++ children(target())
 
     Supervisor.start_link(children, opts)

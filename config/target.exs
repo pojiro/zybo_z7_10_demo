@@ -17,7 +17,7 @@ config :shoehorn, init: [:nerves_runtime, :nerves_pack]
 # configuring erlinit.
 
 # Advance the system clock on devices without real-time clocks.
-config :nerves, :erlinit, update_clock: true
+config :nerves, :erlinit, update_clock: true, ctty: "ttyPS0"
 
 # Configure the device for SSH IEx prompt access and firmware updates
 #
