@@ -49,7 +49,7 @@ defmodule ZyboZ710Demo.MixProject do
       # bumps to Nerves systems. Since these include Linux kernel and Erlang
       # version updates, please review their release notes in case
       # changes to your application are needed.
-      {:nerves_system_zybo_z7_10, "~> 0.0.1", runtime: false, targets: :zybo_z7_10}
+      {:nerves_system_zybo_z7_10, "~> 0.1.0", runtime: false, targets: :zybo_z7_10}
     ]
   end
 
