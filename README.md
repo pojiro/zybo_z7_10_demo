@@ -2,6 +2,9 @@
 
 ![Demo](assets/images/demo.png)
 
+## Confirm Overlay
+
+Switch to `confirm-overlay` branch, then see README.md
 
 ## Targets
 
