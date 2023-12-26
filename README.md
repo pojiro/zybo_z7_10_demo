@@ -4,7 +4,27 @@
 
 ## Confirm Overlay
 
-Switch to `confirm-overlay` branch, then see README.md
+Before followings, [PmodsSWT](https://digilent.com/reference/pmod/pmodswt/start) should be inserted to JE.
+
+`SW3` is not working. Don't worry about it. It's because of Bitstream.
+
+```
+iex()> Application.stop(:zybo_z7_10_demo) # stop Gpio/Uio Server
+iex()> ZyboZ710Demo.Overlay.do!()
+[]
+iex()> ZyboZ710Demo.Overlay.pmods() # turn off all SWs, open GPIOs, then read them.
+0
+0
+1
+0
+[0, 0, 1, 0]
+iex()> ZyboZ710Demo.Overlay.pmods() # turn on all SWs, open GPIOs, then read them.
+1
+1
+1
+1
+[1, 1, 1, 1]
+```
 
 ## Targets
 
